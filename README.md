@@ -24,8 +24,19 @@ adapta la configuración y **guarda un respaldo antes de tocar nada**.
 </p>
 
 <p align="center">
-  <img src="assets/video/demo.gif" alt="Demostración del escritorio: panel de energía, wallpaper animado y DMS" width="80%">
+  <a href="assets/video/Demo.mp4">
+    <img src="assets/screenshots/demo-poster.webp" alt="Ver demo completo del escritorio SwayFX + DMS" width="80%">
+  </a>
 </p>
+
+<p align="center">
+  <strong><a href="assets/video/Demo.mp4">▶ Ver video completo (1:38)</a></strong>
+</p>
+
+> **Sobre el video:** GitHub no reproduce video incrustado desde un archivo del
+> repositorio, así que la portada y el enlace abren el **video completo (1:38, ~7 MB)**.
+> Si quieres que se reproduzca dentro del README, se puede subir como adjunto
+> con el editor web de GitHub (límite de 10 MB en el plan gratuito).
 
 > **Nota:** las capturas muestran extras personales como **fish**, **Codevim/Neovim**,
 > **btop** y un wallpaper de **Wallpaper Engine**. Ese contenido no forma parte del
