@@ -1,0 +1,36 @@
+{
+  "linuxWallpaperEngine": {
+    "enabled": true,
+    "namedPlaylists": {
+      "Default": []
+    },
+    "outputSettings": {
+      "eDP-1": {
+        "fps": 60,
+        "silent": false,
+        "volume": 100
+      },
+      "span:gmw6l613z": {
+        "fps": 60
+      },
+      "*": {
+        "fps": 60
+      }
+    },
+    "activeType": "scene",
+    "playlistShuffle": false,
+    "spanGroups": [],
+    "monitorScenes": {
+      "*": "2902830928",
+      "eDP-1": "3273913010"
+    },
+    "playlistIntervalMinutes": 8,
+    "assetsDir": "@HOME@/.local/share/Steam/steamapps/common/wallpaper_engine/assets",
+    "backgroundsDir": "@HOME@/.local/share/Steam/steamapps/workshop/content/431960",
+    "pickerScrollPositions": {}
+  },
+  "wallpaperCarousel": {
+    "enabled": true,
+    "wallpaperDirectory": "@HOME@/.local/share/Steam/steamapps/workshop/content"
+  }
+}

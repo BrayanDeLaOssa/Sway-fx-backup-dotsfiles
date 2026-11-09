@@ -1,0 +1,41 @@
+# =====================================================================
+#  SwayFX · CachyOS + Dux Modular Shell (DMS)
+#  Configuración modular: cada tema vive en config.d/
+#  Docs DMS: https://duxlabs.dev/docs/dms/compositors
+# =====================================================================
+#
+#  Estructura (se cargan en orden alfabético por el prefijo):
+#    config.d/00-environment.conf    Entorno y arranque de sesión
+#    config.d/10-input.conf          Teclado, touchpad, ratón
+#    config.d/20-outputs.conf        Monitores / resoluciones
+#    config.d/30-appearance.conf     Fuentes, gaps, bordes, colores, cursor
+#    config.d/31-effects.conf        SwayFX: blur, animaciones, sombras
+#    config.d/40-window-rules.conf   Reglas por ventana / aplicación
+#    config.d/50-keybinds.conf       Atajos generales y modo resize
+#    config.d/60-workspaces.conf     Workspaces y scratchpad
+#    config.d/70-media-keys.conf     Audio, multimedia, brillo, capturas
+#    config.d/80-wallpaper-engine.conf Wallpaper animado (plugin DMS)
+#
+#  Recargar:      swaymsg reload          (o $mod+Shift+c)
+#  Validar:       sway -C -c ~/.config/sway/config
+#  Nuevo módulo:  crea config.d/NN-nombre.conf (se incluye solo)
+# =====================================================================
+
+### Variables globales
+# Cámbialas aquí y afectan a todos los módulos.
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term kitty
+# Comando para abrir programas dentro de la terminal (se ajusta al instalador).
+set $term_exec kitty -e
+set $browser helium-browser
+set $filemanager thunar
+
+### Módulos de usuario
+include config.d/*.conf
+
+### Includes del sistema (export de entorno systemd, etc.)
+include /etc/sway/config.d/*

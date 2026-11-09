@@ -1,0 +1,17 @@
+# Archivos generados / temporales
+keybinds.flat.conf
+*.bak
+*.bak.*
+*.orig
+*.rej
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

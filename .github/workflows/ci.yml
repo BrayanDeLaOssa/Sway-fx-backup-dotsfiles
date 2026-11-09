@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar shellcheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+
+      - name: Comprobar sintaxis
+        run: |
+          for f in install.sh uninstall.sh scripts/doctor.sh scripts/lib/*.sh \
+                   dotfiles/sway/scripts/*.sh tests/*.sh; do
+            bash -n "$f"
+          done
+
+      - name: ShellCheck (warnings)
+        run: |
+          shellcheck -S warning install.sh uninstall.sh scripts/doctor.sh \
+            scripts/lib/*.sh dotfiles/sway/scripts/*.sh tests/*.sh
+
+      - name: Prueba de humo
+        run: ./tests/test-installer.sh
